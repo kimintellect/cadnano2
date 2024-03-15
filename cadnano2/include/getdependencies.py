@@ -6,6 +6,11 @@ import shutil
 from os.path import basename, dirname, splitext, exists, split, abspath
 import os
 
+import os
+
+# 현재 파일의 절대 경로 가져오기
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
 # list of tuples of the url and the subdirectory to copy to the include directory
 urls = [('http://pypi.python.org/packages/source/n/networkx/networkx-1.6.tar.gz', 'networkx')
         ]
